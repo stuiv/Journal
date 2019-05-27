@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InputActivity">
+
+    <TextView
+    android:id="@+id/titleEdit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:textAlignment="center"
+    android:text="" />
+
+    <EditText
+        android:id="@+id/edit_titleEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="10"
+        android:hint="Title"
+        android:textAlignment="center"
+        android:inputType="textPersonName"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fffff0 ">
+
+        <RadioGroup
+            android:id="@+id/moodGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/radioAngry"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioAngry"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:height="80dp"
+                android:padding="3dp"
+                android:text="Angry"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/radioEmbarrassed"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:height="80dp"
+                android:padding="3dp"
+                android:text="Embarrassed"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/radioHappy"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:height="80dp"
+                android:padding="3dp"
+                android:text="Happy"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/radioSuperHappy"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:height="80dp"
+                android:padding="3dp"
+                android:text="Excited"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/radioWorried"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:height="80dp"
+                android:padding="3dp"
+                android:text="Worried"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/radioScared"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:height="80dp"
+                android:padding="3dp"
+                android:text="scared"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/radioUpset"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:height="80dp"
+                android:padding="3dp"
+                android:text="Upset"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/radioSad"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:height="80dp"
+                android:padding="3dp"
+                android:text="Sad"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/radioProud"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:height="80dp"
+                android:padding="3dp"
+                android:text="Proud"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="353dp">
+
+        <EditText
+            android:id="@+id/contentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Lief dagboek"
+            android:textAlignment="center" />
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="8dp"
+        android:onClick="Journal_entry"
+        android:layout_weight="0"
+        android:text="Submit" />
+
+</LinearLayout>
